@@ -25,15 +25,59 @@
   </header>
   <main class="container">
     <section class="filters">
-
+      <form class="filters-form" action="#" method="POST">
+        <fieldset>
+          <legend>Сетка:</legend>
+          <ul>
+            <li>
+              <input type="radio" name="group-grid" value="adaptive" id="adaptive-grid" checked>
+              <label for="adaptive-grid">Адаптивная</label>
+            </li>
+            <li>
+              <input type="radio" name="group-grid" value="fixed" id="fixed-grid">
+              <label for="fixed-grid">Фиксированная</label>
+            </li>
+            <li>
+              <input type="radio" name="group-grid" value="rubber" id="rubber-grid">
+              <label for="rubber-grid">Резиновая</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend class="filters-features">Особенности:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="slider" id="filter-slider" checked>
+              <label for="filter-slider">Слайдер</label>
+            </li>
+            <li>
+              <input type="checkbox" name="advantage" id="filter-advantage">
+              <label for="filter-advantage">Блок преимуществ</label>
+            </li>
+            <li>
+              <input type="checkbox" name="news" id="filter-news" checked>
+              <label for="filter-news">Новости</label>
+            </li>
+            <li>
+              <input type="checkbox" name="gallery" id="filter-gallery">
+              <label for="filter-gallery">Галерея</label>
+            </li>
+            <li>
+              <input type="checkbox" name="basket" id="filter=basket">
+              <label for="filter-basket">Корзина</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
     </section>
     <section class="product-list">
-      <div class="product-item"><img src="img/img-sedona.jpg" alt="" width="360" height="576"></div>
-      <div class="product-item"><img src="img/img-pink.jpg" alt="" width="360" height="576"></div>
-      <div class="product-item"><img src="img/img-barbershop.jpg" alt="" width="360" height="576"></div>
-      <div class="product-item"><img src="img/img-mishka.jpg" alt="" width="360" height="576"></div>
-      <div class="product-item"><img src="img/img-aplus.jpg" alt="" width="360" height="576"></div>
-      <div class="product-item"><img src="img/img-kvast.jpg" alt="" width="360" height="576"></div>
+      <div class="product-item"><img src="img/img-sedona.jpg" alt="Sedona - информационный сайт для туристов" width="360" height="576"></div>
+      <div class="product-item"><img src="img/img-pink.jpg" alt="Pink-app - Продуктовый лендинг приложения для iOS и Android" width="360" height="576"></div>
+      <div class="product-item"><img src="img/img-barbershop.jpg" alt="Barbershop - Сайт салона красоты. Для мужчин, да." width="360" height="576"></div>
+      <div class="product-item"><img src="img/img-mishka.jpg" alt="Mishka - Интернет-магазин вязаных игрушек" width="360" height="576"></div>
+      <div class="product-item"><img src="img/img-aplus.jpg" alt="A Plus - Лендинг курсов повышения квалификации" width="360" height="576"></div>
+      <div class="product-item"><img src="img/img-kvast.jpg" alt="Кваст - Промо-сайт производителя крафтого кваса" width="360" height="576"></div>
       <ul class="pagination-list">
         <li class="pagination-item"><a href="pagination-item-current">1</a></li>
         <li class="pagination-item"><a href="#">2</a></li>
@@ -55,5 +99,19 @@
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </footer>
+
+  <section class="modal modal-feedback">
+    <h2>Напишите нам</h2>
+    <form class="feedback-form" action="#" method="POST">
+      <label for="feedback-user-name">Ваше имя:</label>
+      <input class="feedback-name" type="text" name="user-name" placeholder="Имя Фамилия" id="feedback-user-name">
+      <label for="feedback-user-email">Ваш e-mail:</label>
+      <input class="feedback-email" type="email" name="user-email" placeholder="email@example.com" id="feedback-user-email">
+      <label for="feedback-user-message">Текст письма:</label>
+      <input class="feedback-message" type="text" name="user-message" placeholder="В свободной форме" id="feedback-user-message">
+      <button class="btn-modal" type="submit">Отправить</button>
+    </form>
+    <span class="modal-close" aria-label="Закрыть окно с обратной связью">х</span>
+  </section>
 </body>
 </html>

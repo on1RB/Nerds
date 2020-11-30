@@ -18,7 +18,9 @@
         <li><a href="#">Контакты</a></li>
       </ul>
       <ul class="user-navigation">
-        <li class="user-basket">Корзина</li>
+        <li class="user-basket">
+          <a class="open-basket" href="basket.html">Корзина</a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -61,5 +63,19 @@
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </footer>
+
+  <section class="modal modal-feedback">
+    <h2>Напишите нам</h2>
+    <form class="feedback-form" action="#" method="POST">
+      <label for="feedback-user-name">Ваше имя:</label>
+      <input class="feedback-name" type="text" name="user-name" placeholder="Имя Фамилия" id="feedback-user-name">
+      <label for="feedback-user-email">Ваш e-mail:</label>
+      <input class="feedback-email" type="email" name="user-email" placeholder="email@example.com" id="feedback-user-email">
+      <label for="feedback-user-message">Текст письма:</label>
+      <input class="feedback-message" type="text" name="user-message" placeholder="В свободной форме" id="feedback-user-message">
+      <button class="btn-modal" type="submit">Отправить</button>
+    </form>
+    <span class="modal-close" aria-label="Закрыть окно с обратной связью">х</span>
+  </section>
 </body>
 </html>
