@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
   <title>Дизайн-Студия Nerds</title>
 </head>
 <body>
@@ -18,10 +21,12 @@
         <li><a href="#">Контакты</a></li>
       </ul>
       <ul class="user-navigation">
-        <li class="user-basket">Корзина</li>
+        <li class="user-basket">
+          <a class="open-basket" href="basket.html">Корзина</a>
+        </li>
       </ul>
     </nav>
-    <h1>Магизин готовых шаблонов</h1>
+    <h1 class="shop-title">Магазин готовых шаблонов</h1>
   </header>
   <main class="container">
     <section class="filters">
@@ -109,7 +114,7 @@
       <input class="feedback-email" type="email" name="user-email" placeholder="email@example.com" id="feedback-user-email">
       <label for="feedback-user-message">Текст письма:</label>
       <input class="feedback-message" type="text" name="user-message" placeholder="В свободной форме" id="feedback-user-message">
-      <button class="btn-modal" type="submit">Отправить</button>
+      <button class="button btn-modal" type="submit">Отправить</button>
     </form>
     <span class="modal-close" aria-label="Закрыть окно с обратной связью">х</span>
   </section>

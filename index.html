@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
   <title>Дизайн-Студия Nerds</title>
 </head>
 <body>
@@ -25,7 +28,7 @@
     </nav>
   </header>
   <main class="container">
-    <h1 class="visially-hidden">Дизайн-Студия Nerds</h1>
+    <h1 class="visually-hidden">Дизайн-Студия Nerds</h1>
 
     <section class="features">
       <ul class="features-list">
@@ -33,19 +36,19 @@
           <img src="img/features-1.png" width="300" height="146" alt="Преимущество">
           <h3>Веб-сайты</h3>
           <p>Мир никогда не будет прежним после того как видит ваш сайт!</p>
-          <a href="#">Заказать</a>
+          <button class="button button-order button-order-red">Заказать</button>
         </li>
         <li class="features-item">
           <img src="img/features-2.png" width="300" height="146" alt="Преимущество">
           <h3>Приложения</h3>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a href="#">Заказать</a>
+          <button class="button button-order button-order-green">Заказать</button>
         </li>
         <li class="features-item">
           <img src="img/features-3.png" width="300" height="146" alt="Преимущество">
           <h3>Презентации</h3>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a href="#">Заказать</a>
+          <button class="button button-order button-order-yellow">Заказать</button>
         </li>
       </ul>
     </section>
@@ -73,7 +76,7 @@
       <input class="feedback-email" type="email" name="user-email" placeholder="email@example.com" id="feedback-user-email">
       <label for="feedback-user-message">Текст письма:</label>
       <input class="feedback-message" type="text" name="user-message" placeholder="В свободной форме" id="feedback-user-message">
-      <button class="btn-modal" type="submit">Отправить</button>
+      <button class="button btn-modal" type="submit">Отправить</button>
     </form>
     <span class="modal-close" aria-label="Закрыть окно с обратной связью">х</span>
   </section>
