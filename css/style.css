@@ -66,7 +66,7 @@ body {
 
 .site-navigation a:focus,
 .user-navigation a:focus {
-  outline: 2px solid rgb(45, 48, 209);
+  outline: 1px solid rgb(45, 48, 209);
 }
 
 .site-navigation a:active,
@@ -74,8 +74,38 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.main-header-logo:focus {
+  outline: 1px solid rgb(45, 48, 209);
+}
+
 .site-navigation-current a {
   border-bottom: 2px solid #fb565a;
+}
+
+.slider-description h2 {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+  color: #000000;
+}
+
+.slider-description .button-slider {
+  text-decoration: none;
+  background-color: #fb565a;
+  text-align: center;
+}
+
+.slider-description .button-slider:hover {
+  background-color: #e74246;
+}
+
+.slider-description .button-slider:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #d7373b;
+}
+
+.slider-description .button-slider:focus {
+  outline: 1px solid rgb(45, 48, 209);
 }
 
 .container {
@@ -91,10 +121,11 @@ body {
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
+  color: #000000;
 }
 
 .features-item .button-order:focus {
-  outline: 2px solid rgb(45, 48, 209);
+  outline: 1px solid rgb(45, 48, 209);
 }
 
 .features-item .button-order-red {
@@ -137,6 +168,83 @@ body {
   background-color: #e5a722;
   color: rgba(255, 255, 255, 0.3);
   box-shadow: inset 0 3px rgba(0, 1, 1, 0.1);
+}
+
+.left-column h2 {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.left-column h3 {
+  font-weight: 700;
+  color: #000000;
+}
+
+.left-column .order-develop {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.right-column b {
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.right-column .accuracy-work {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.accuracy-work b {
+  font-size: 45px;
+  line-height: 11px;
+  font-weight: 700;
+}
+
+.accuracy-work p {
+  line-height: 18px;
+}
+
+.our-adress h3 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.our-adress p {
+  line-height: 18px;
+  color: #666666;
+}
+
+.our-adress span {
+  line-height: 18px;
+  color: #666666;
+}
+
+.our-adress .write-us {
+  text-decoration: none;
+  text-align: center;
+  background-color: #fb565a;
+}
+
+.our-adress .write-us:hover {
+  background-color: #e74246;
+}
+
+.our-adress .write-us:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #d7373b;
+}
+
+.our-adress .write-us:focus {
+  outline: 1px solid rgb(45, 48, 209);
 }
 
 .main-footer {
